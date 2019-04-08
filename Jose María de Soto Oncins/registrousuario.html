@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "UTF-8">
+	<title>Registro Usuario</title>
+	<link rel = "stylesheet" type = "text/css" href = "styleRegistro.css">
+</head>
+<body> 	
+	<!-- *****************************************************Header*****************************************************-->
+	<header id="header">
+		<div class="shell">
+			
+			<a href="pre-registro.html" id="atras"><img src="images/flechaizquierda.png" alt="FlechaParaVolverAtras" width="50"></a>
+
+			<a href="index.html"><img src="images/Berserk_logo.png" alt="Logotipo" width="250"></a>
+			
+		</div>
+	</header>
+	<!-- *****************************************************End Header***************************************************** -->
+
+	
+	</div>
+	<main>
+	 	<section class="articles">
+	 		<article>
+			 	<form id="altaUsuario" method="get" action="accion_alta_usuario.php">
+					<p>
+						<i><strong>Los campos obligatorios están marcados con </i><em>*</em></strong>
+					</p>
+					<fieldset>
+						<legend>
+							<h3> Datos personales </h3>
+						</legend>
+						<label for="nif"><em>*</em>NIF</label>
+						<input id="nif" name="nif" type="text" placeholder="12345678X" pattern="^[0-9]{8}[A-Z]" title="Ocho dígitos seguidos de una letra mayúscula" required>
+						<br>
+
+						<label for="nombre"><em>*</em>Nombre:</label>
+						<input id="nombre" name="nombre" type="text" size="40" required/>
+						<br>
+
+						<label for="apellidos">Apellidos:</label>
+						<input id="apellidos" name="apellidos" type="text" size="80" required/>
+						<br>
+
+						<label>Perfil:</label>
+						<label>
+							<input name="perfil" type="radio" value="ALUMNO"/>
+							Alumno</label>
+						<label>
+							<input name="perfil" type="radio" value="PDI" />
+							PDI</label>
+						<label>
+							<input name="perfil" type="radio" value="PAS" />
+							PAS</label>
+						<br>
+
+						<label for="fechaNacimiento">Fecha de nacimiento:</label>
+						<input type="date" id="fechaNacimiento" name="fechaNacimiento" required/>
+						<br>
+
+						<label for="email"><em>*</em>Email:</label>
+						<input id="email" name="email"  type="email" placeholder="usuario@dominio.extension" required/><br>
+
+						<br>
+					</fieldset>
+					<br/>
+					<fieldset>
+						<legend>
+							<h3> Datos de usuario </h3>
+						</legend>
+						<label for="nick">Nickname:</label>
+						<input id="nick" name="nick" type="text" size="40" required/>
+						<br>
+
+						<label for="pass"><em>*</em>Password:</label>
+						<input type="password" name="pass" id="pass" placeholder="Mínimo 8 caracteres entre letras y dígitos" required />
+
+						<br>
+						<label for="confirmpass"> <em>*</em>Confirmar Password:</label>
+						<input type="password" name="confirmpass" id="confirmpass" placeholder="Confirmación de contraseña" required />
+						<br>
+
+						<label for="generoLiterario">¿Cuáles son tus géneros literarios favoritos?</label>
+						<select name="generoLiterario" id="generoLiterario">
+		<!--
+			EJERCICIO 2 APT 4	
+		-->
+
+							<option value="CF">Ciencia Ficción</option>
+							<option value="NH">Novela Histórica</option>
+							<option value="NN" >Novela Negra</option>
+							<option value="NG">Novela Gráfica</option>
+							<option value="E">Ensayo</option>
+							<option value="P">Poesíaa</option>
+							<option value="B">Biografías</option>
+							<option value="T">Terror</option>
+							<option value="I">Infantil</option>
+							<option value="O">Otro</option>
+						</select>
+						<br>
+					</fieldset>
+					<br/>
+					<fieldset>
+						<legend>
+							<h3> Dirección </h3>
+						</legend>
+
+						<label for="calle"><em>*</em>Calle/Avda.:</label>
+						<input id="calle" name="calle" type="text" size="80"/>
+						<br>
+
+						<label for="provincia"><em>*</em>Provincia:</label>
+						<input list="opcionesProvincias" name="provincia" id="provincia"/>
+						<datalist id="opcionesProvincias">
+						  	<option value="CD">Cádiz</option>
+							<option value="SV">Sevilla</option>
+							<option value="MA" >Málaga</option>
+							<option value="HU">Huelva</option>
+							<option value="CO">Córdoba</option>
+							<option value="JA">Jaén</option>
+							<option value="AL">Almería</option>
+							<option value="GR">Granada</option>
+							<option value="OT">Otra</option>
+						</datalist>
+						<br>
+					</fieldset>
+					<input type="submit" value="Enviar" />
+				</form>
+			</article>
+		</section>
+		<aside>
+			<img src="images/usuario.png" alt="" width="350">
+			<br><br>
+			<h3><a href="#">Registro como usuario</a></h3>
+			<p>Su historia se desarrolla en la Tercera Edad del Sol de la Tierra Media, un lugar ficticio poblado por hombres y otras razas antropomorfas como los hobbits, los elfos o los enanos, así como por muchas otras criaturas reales y fantásticas. La novela narra el viaje del protagonista principal, Frodo Bolsón, hobbit de la Comarca, para destruir el Anillo Único y la consiguiente guerra que provocará el enemigo para recuperarlo, ya que es la principal fuente de poder de su creador, el Señor oscuro Sauron.</p>
+		</aside>
+	 </main>
+
+	<footer>
+		<div class="shell">
+			
+			<!-- *****************************************************Footer Logo***************************************************** -->
+			<a href="index.html"><img src="images/Berserk_logo.png" alt="Logotipo" width="200"></a>
+			<!-- *****************************************************End Footer***************************************************** -->
+			
+			<!-- *****************************************************Footer Nav***************************************************** -->
+			<div class="right">
+				<p>
+				<a href="#">Inicio</a>
+					<span>|</span>
+					<a href="#">Sobre nosotros</a>
+					<span>|</span>
+					<a href="#">Servicios</a>
+					<span>|</span>
+					<a href="#">Clientes</a>
+					<span>|</span>
+					<a href="#">Contactanos</a>
+				</p>
+				<p>&copy; MdelismoMolina.com. 
+					Somos <a href="#" target="_blank" title="MolinaSL">ModelismoMolina.com</a></p>
+			</div>
+			<!-- *****************************************************End Footer Nav**************************************************** -->
+		</div>
+	</footer>
+</body>
+</html>
+
+<style>
+	label{
+		width:200px;
+		text-align:right;
+		display:inline-block;
+	}
+</style>
