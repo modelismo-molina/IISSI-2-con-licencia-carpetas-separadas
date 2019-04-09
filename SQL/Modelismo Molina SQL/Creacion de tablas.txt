@@ -1,0 +1,95 @@
+DROP TABLE Moderadores;
+DROP TABLE Sorteos;
+DROP TABLE Propuestas;
+DROP TABLE Opciones;
+DROP TABLE Usuarios;
+DROP TABLE Encuestas;
+DROP TABLE Modelistas;
+DROP TABLE Modelos;
+DROP TABLE Pedidos;
+
+CREATE TABLE Moderadores (
+IdModerador VARCHAR2(50) PRIMARY KEY,
+Nombre VARCHAR2(20) NOT NULL,
+Apellido VARCHAR2(20) NOT NULL,
+DNI VARCHAR2 (10) NOT NULL,
+Telefono NUMBER (9),
+eMail VARCHAR2(20),
+Direccion VARCHAR2(20),
+FechaNacimiento DATE NOT NULL,
+contraseña VARCHAR2 (20) NOT NULL UNIQUE);
+
+CREATE TABLE Sorteos (
+IdSorteo VARCHAR2(50) PRIMARY KEY,
+FechaInicio DATE NOT NULL,
+Contenido VARCHAR2 (144),
+IdModerador SMALLINT,
+FOREIGN KEY (IdModerador) REFERENCES Moderadores(IdModerador));
+
+CREATE TABLE Propuestas (
+IdPropuestas VARCHAR2(50) PRIMARY KEY,
+Descripcion VARCHAR (144),
+IdUsuario VARCHAR2(50),
+FOREIGN KEY (IdUsuario) REFERENCES Usuarios);
+
+CREATE TABLE Opciones (
+IdOpcion VARCHAR2(50) PRIMARY KEY,
+Titulo VARCHAR2(20),
+Descripcion VARCHAR(20),
+IdUsuario VARCHAR (50),
+FOREIGN KEY (IdUsuario) REFERENCES Usuarios);
+
+CREATE TABLE Encuestas (
+IdEncuesta NUMBER(2)PRIMARY KEY
+);
+
+CREATE TABLE Usuarios (
+  IdUsuario VARCHAR2(50) NOT NULL,
+  Telefono INT NOT NULL,
+  Contraseña VARCHAR2(20) NOT NULL,
+  Email VARCHAR2(50) NOT NULL,
+  Direccion VARCHAR2(50) NOT NULL,
+  FechaNacimiento DATE ,
+  DNI CHAR(9) NOT NULL,
+  Nombre VARCHAR2(50) NOT NULL,
+  Apellido VARCHAR2(50),
+  PRIMARY KEY(IdUsuario)
+  );
+  
+CREATE TABLE Modelistas ( 
+  IdModelista VARCHAR2(50) NOT NULL,
+  Telefono INT NOT NULL,
+  Contraseña VARCHAR2(20) NOT NULL,
+  Email VARCHAR2(50) NOT NULL,
+  Direccion VARCHAR2(50) NOT NULL,
+  FechaNacimiento DATE ,
+  DNI CHAR(9) NOT NULL,
+  Nombre VARCHAR2(50) NOT NULL,
+  Apellido VARCHAR2(50),
+  PRIMARY KEY(IdModelista)
+  );
+
+CREATE TABLE Modelos (
+  IdModelo VARCHAR2(50) NOT NULL,
+  Imagen BLOB ,
+  IdUsuario VARCHAR2(50),
+  IdModelista VARCHAR2(50),
+  Descripcion VARCHAR2(100),
+  EnlaceVideo VARCHAR2 (50),
+  EnlaceProductos VARCHAR2(50),
+  Precio INT,
+  Nombre VARCHAR2(50),
+  PRIMARY KEY (IdModelo),
+  FOREIGN KEY (IdUsuario) references Usuarios
+  FOREIGN KEY (IdModelista) references Modelistas );
+
+CREATE TABLE Pedidos (
+  IdPedido INT,
+  Descripcion VARCHAR(400),
+  FomaPago VARCHAR2(50),
+  FechaSolicitud DATE,
+  IdModelista VARCHAR2(50),
+  IdUsuario VARCHAR2(50),
+  pRIMARY KEY(IdPedido),
+  Foreign Key(IdModelista) references Modelista(IdModelista),
+  Foreign Key(IdUsuario) references USUARIO(IdUsuario));
