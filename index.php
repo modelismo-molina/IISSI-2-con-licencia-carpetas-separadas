@@ -4,98 +4,21 @@
 	<meta charset = "UTF-8">
 	<title>ModelismoMolina</title>
 	<link rel = "stylesheet" type = "text/css" href = "style.css">
-	<!--Estos javaScript son copiados para el deslizamiento del slider y su temporizador-->
 	<script src="js/jquery-1.4.1.min.js" type="text/javascript"></script>
 	<script src="js/jquery.jcarousel.pack.js" type="text/javascript"></script>
 	<script src="js/jquery-func.js" type="text/javascript"></script>
 </head>
 <body> 	
 	<!-- *****************************************************Header*****************************************************-->
-	<header id="header">
-		<div class="shell">
-			
-
-			<a href="index.html"><img src="images/Berserk_logo.png" alt="Logotipo" width="250"></a>
-
-
-			
-			<!-- *****************************************************Navigation***************************************************** -->
-			<nav id="navigation">
-				<ul>
-				    <li><a href="index.html">Inicio<span><em></em></span></a></li>
-				    <li><a href="#">Tienda<span><em></em></span></a></li>
-				    <li><a href="#">Propuestas<span><em></em></span></a></li>
-
-				    <li><a href="encuestas.html">Encuestas<span><em></em></span></a></li>
-				    <li><a href="#"><img src="images/carrito.png" alt="" width="25"/><span><em></em></span></a></li>
-				    <li class="last"><a href="pre-registro.html">Login<span><em></em></span></a></li>
-
-				</ul>
-			</nav>
-			<!-- *****************************************************End Navigation***************************************************** -->
-			
-		</div>
-	</header>
+	<?php
+		include_once("Estructura/cabecera.php");
+	?>
 	<!-- *****************************************************End Header***************************************************** -->
 
 	<!-- *****************************************************Slider***************************************************** -->
-	<div id="slider">
-		<div class="shell">
-			
-			<!-- *****************************************************Slides***************************************************** -->
-			<div class="slides">
-				<ul>
-					<!-- *****************************************************Slide***************************************************** -->
-				    <li>
-				    	<div class="slide-info">
-					    	<h2><span>TITULO</span> PROPUESTA1</h2>
-					    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam arcu ligula, faucibus eu imperdiet eu, bibendum sit amet augue. Sed turpis sem, interdum sit amet egestas a, mattis non libero. Suspendisse tristique nisi sed justo accumsan vel mattis nulla fermentum. Etiam varius est id mi fermentum aliquam.</p>
-					    	<p>Quisque quis vestibulum turpis. Sed venenatis ipsum laoreet elit pulvinar vitae pharetra massa dignissim. Curabitur ligula sapien, auctor ut porttitor a, ultricies lobortis dui. Suspendisse lacinia tellus a diam rutrum rhoncus. </p>
-				    	</div>
-				    	<img src="images/gokuanime.png" alt="" width="230">
-				    </li>
-				    <!-- *****************************************************End Slide***************************************************** -->
-				    
-				    <!-- *****************************************************Slide***************************************************** -->
-				    <li>
-				    	<div class="slide-info">
-					    	<h2><span>TITULO</span> PROPUESTA 2</h2>
-					    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam arcu ligula, faucibus eu imperdiet eu, bibendum sit amet augue. Sed turpis sem, interdum sit amet egestas a, mattis non libero. Suspendisse tristique nisi sed justo accumsan vel mattis nulla fermentum. Etiam varius est id mi fermentum aliquam.</p>
-					    	<p>Quisque quis vestibulum turpis. Sed venenatis ipsum laoreet elit pulvinar vitae pharetra massa dignissim. Curabitur ligula sapien, auctor ut porttitor a, ultricies lobortis dui. Suspendisse lacinia tellus a diam rutrum rhoncus. </p>
-				    	</div>
-				    	<img src="images/naruto.png" alt="" width="250">
-				    </li>
-				    <!-- *****************************************************End Slide***************************************************** -->
-				    
-				    <!-- *****************************************************Slide***************************************************** -->
-				    <li>
-				    	<div class="slide-info">
-					    	<h2><span>TITULO</span> PROPUESTA 2</h2>
-					    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam arcu ligula, faucibus eu imperdiet eu, bibendum sit amet augue. Sed turpis sem, interdum sit amet egestas a, mattis non libero. Suspendisse tristique nisi sed justo accumsan vel mattis nulla fermentum. Etiam varius est id mi fermentum aliquam.</p>
-					    	<p>Quisque quis vestibulum turpis. Sed venenatis ipsum laoreet elit pulvinar vitae pharetra massa dignissim. Curabitur ligula sapien, auctor ut porttitor a, ultricies lobortis dui. Suspendisse lacinia tellus a diam rutrum rhoncus. </p>
-				    	</div>
-				    	<img src="images/l.png" alt="" width="220">
-				    </li>
-					<!-- *****************************************************End Slide***************************************************** -->
-				    
-			    </ul>
-			</div>
-			<!-- *****************************************************End Slides***************************************************** -->
-			
-		</div>
-	</div>
-	<!-- *****************************************************End Slider***************************************************** -->
-
-	<!-- *****************************************************Slider Nav***************************************************** -->
-	<div id="slider-navigation">
-		<div class="shell">
-			<ul>
-			    <li><a href="#" class="active">LANZAMIENTO<strong>PROXIMO</strong><em class="ico1"></em></a></li>
-			    <li><a href="#">KAKASHI<strong>NOVEDADES</strong><em class="ico2"></em></a></li>
-			    <li class="last"><a href="#">REBAJAS<strong>HASTA 25%</strong><em class="ico3"></em></a></li>
-			</ul>
-		</div>
-	</div>
+	<?php 
+		include_once("Estructura/deslizador.php");
+	?>
 	<main>
 		<section class = "main">
 			<section class="articles">
@@ -153,34 +76,9 @@
 			</aside>
 		</section>
 	</main>
-	<footer>
-		<div class="shell">
-			
-			<!-- *****************************************************Footer Logo***************************************************** -->
-
-			<a href="index.html"><img src="images/Berserk_logo.png" alt="Logotipo" width="200"></a>
-
-			<!-- *****************************************************End Footer***************************************************** -->
-			
-			<!-- *****************************************************Footer Nav***************************************************** -->
-			<div class="right">
-				<p>
-				<a href="#">Inicio</a>
-					<span>|</span>
-					<a href="#">Sobre nosotros</a>
-					<span>|</span>
-					<a href="#">Servicios</a>
-					<span>|</span>
-					<a href="#">Clientes</a>
-					<span>|</span>
-					<a href="#">Contactanos</a>
-				</p>
-				<p> modelismomolina@gmail.com
-					 Somos <a href="#" target="_blank" title="MolinaSL"> ModelismoMolinaSL</a></p>
-			</div>
-			<!-- *****************************************************End Footer Nav**************************************************** -->
-		</div>
-	</footer>
+	<?php 
+		include_once("Estructura/pie.php")
+	?>
 	
 </body>
 </html>

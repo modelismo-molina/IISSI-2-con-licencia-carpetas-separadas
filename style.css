@@ -51,7 +51,7 @@ h2, h3, #navigation, #slider-navigation, #footer {
 	padding-top:37px; 
 	font-size:14px;
 }
-
+ 
 #navigation ul li{ 
 	float:left; 
 	display:inline; height:21px; 
@@ -103,6 +103,7 @@ h2, h3, #navigation, #slider-navigation, #footer {
 #navigation ul li a:hover em{ 
 	background-position:0 0
 }
+
 
 #slider {  /***********************************************Slider*********************************************************/
 	height:298px; 
@@ -241,6 +242,8 @@ h2, h3, #navigation, #slider-navigation, #footer {
 	color:#000; 
 }
 
+
+
 main { /***********************************************Main*********************************************************/
 	color: #000;
 }
@@ -323,6 +326,7 @@ aside h3, aside a {
 aside a:hover {
 	color: #C9A72B;
 }
+
 
 footer {
 	float: left;

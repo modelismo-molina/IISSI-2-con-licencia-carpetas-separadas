@@ -25,20 +25,21 @@
 	<header id="header">
 		<div class="shell">
 			
+			<a href="login.php" id="atras"><img src="images/flechaizquierda.png" alt="FlechaParaVolverAtras" width="50"></a>
 
-			<a href="index.html"><img src="images/Berserk_logo.png" alt="Logotipo" width="250"></a>
+			<a href="index.php"><img src="images/Berserk_logo.png" alt="Logotipo" width="250"></a>
 
 			
 			<!-- *****************************************************Navigation***************************************************** -->
 			<nav id="navigation">
 				<ul>
-				    <li><a href="index.html">Inicio<span><em></em></span></a></li>
+				    <li><a href="index.php">Inicio<span><em></em></span></a></li>
 				    <li><a href="#">Tienda<span><em></em></span></a></li>
 				    <li><a href="#">Propuestas<span><em></em></span></a></li>
 
-				    <li><a href="encuestas.html">Encuestas<span><em></em></span></a></li>
+				    <li><a href="encuestas.php">Encuestas<span><em></em></span></a></li>
 				    <li><a href="#"><img src="images/carrito.png" alt="" width="25"/><span><em></em></span></a></li>
-				    <li class="last"><a href="pre-registro.html">Login<span><em></em></span></a></li>
+				    <li class="last"><a href="pre-registro.php">Login<span><em></em></span></a></li>
 
 				</ul>
 			</nav>
@@ -59,7 +60,7 @@
 					<p>Cuando este fue derrotado, el Anillo se perdió y su amo quedó reducido a un gran Ojo en lo alto de la torre de Barad-dûr en el corazón de Mordor. Ahora, siglos después, el Anillo ha vuelto a ser encontrado.</p></p>
 					</br>
 
-					<p><a href="registrousuario.html"><button class="button">Registrarte como usuario</button></a></p>
+					<p><a href="registrousuario.php"><button class="button">Registrarte como usuario</button></a></p>
 
 
 				</article>
@@ -71,7 +72,7 @@
 					</br>
 
 
-					<p><a href="registromodelista.html"><button class="button">Registrarte como modelista</button></a></p>
+					<p><a href="registromodelista.php"><button class="button">Registrarte como modelista</button></a></p>
 
 
 
@@ -86,7 +87,7 @@
 			
 			<!-- *****************************************************Footer Logo***************************************************** -->
 
-			<a href="index.html"><img src="images/Berserk_logo.png" alt="Logotipo" width="200"></a>
+			<a href="index.php"><img src="images/Berserk_logo.png" alt="Logotipo" width="200"></a>
 
 
 			<!-- *****************************************************End Footer***************************************************** -->

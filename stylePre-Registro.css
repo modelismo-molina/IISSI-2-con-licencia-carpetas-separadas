@@ -39,6 +39,26 @@ h2, h3, #navigation, #slider-navigation, #footer {
 	background:url(images/header.gif);
 	margin-top: 0;
 }
+header #atras {
+	position: absolute;
+	top:25px;
+	bottom:;
+	left:100px;
+	right:;
+	background-color: #888888; /* Green */
+  	border:none;
+  	border-radius: 25px;
+  	-webkit-transition-duration: 0.3s;
+  	transition-duration: 0.4s;
+}
+header #atras:hover {
+	background-color: #C9A72B;
+ 	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+ 	-webkit-box-shadow: 0px 0px 8px 3px rgba(201,167,43,0.78);
+	-moz-box-shadow: 0px 0px 8px 3px rgba(201,167,43,0.78);
+	box-shadow: 0px 0px 8px 3px rgba(201,167,43,0.78);
+}
 
 
 #navigation { /***********************************************Navigator*********************************************************/
@@ -161,11 +181,7 @@ main .articles article fieldset{
 	margin-bottom: 20px;
 	border-radius: 15px;
 	border-bottom: 3px #939393 outset;
-<<<<<<< HEAD
 	height: 400px;
-=======
-	height: 600px;
->>>>>>> 2eaa83df7a6da5cae04c205f16703b6bb3a252b1
 
 }
 #usuario{
