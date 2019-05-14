@@ -35,23 +35,7 @@
 	
 	<main>
 		<section class = "main">
-			<section class="articles">
-				<article>
-					<img src="images/Producto 1.jpg" width="200" height="200">
-					<p align="right">
-						Hola que tal esto se sale del cuadro?
-					</p>
 			
-				</article>
-			</section>
-		<section class = "main">
-			<section class="articles">
-				<article> <img src="images/Producto 2.jpg" width="200" height="200"></article>
-			</section>
-		<section class = "main">
-			<section class="articles">
-				<article> <img src="images/Producto 3.jpg" width="200" height="200"></article>
-			</section>
 	</main>
 	<footer>
 		<div class="shell">
