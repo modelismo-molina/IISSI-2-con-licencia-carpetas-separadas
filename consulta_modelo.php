@@ -178,7 +178,7 @@ else {
 
 							<button id="grabar" name="grabar" type="submit" class="editar_fila">
 
-								<img src="images/bag_menuito.bmp" class="editar_fila" alt="Guardar modificación">
+								<img src="images/bag_menuito.bmp" class="editar_fila" alt="Guardar">
 
 							</button>
 
@@ -186,7 +186,7 @@ else {
 
 							<button id="editar" name="editar" type="submit" class="editar_fila">
 
-								<img src="images/pencil_menuito.bmp" class="editar_fila" alt="Editar libro">
+								<img src="images/pencil_menuito.bmp" class="editar_fila" alt="Editar Modelo">
 
 							</button>
 
@@ -194,7 +194,7 @@ else {
 
 						<button id="borrar" name="borrar" type="submit" class="editar_fila">
 
-							<img src="images/remove_menuito.bmp" class="editar_fila" alt="Borrar libro">
+							<img src="images/remove_menuito.bmp" class="editar_fila" alt="Borrar Modelo">
 
 						</button>
 
